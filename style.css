@@ -1,0 +1,144 @@
+.clearfix { *zoom:1; }
+.clearfix:before, .clearfix:after {
+  display:table;
+  content:"";
+}
+.clearfix:after { clear:both; }
+.fade-out { opacity:0 !important; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  vertical-align:baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+body { line-height:1; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after {
+  content:'';
+  content:none;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+body {
+  background: url('background.png') repeat;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#3b3a37;
+  font-size:100%;
+  line-height:1.6;
+}
+a, a:link, a:visited, a:active, a:focus {
+  color: #363636;
+  text-decoration:none;
+  outline:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0.1);
+}
+a:hover {
+  color:#cc0000;
+  text-decoration:none;
+}
+a:focus { outline:thin dotted; }
+a:hover, a:active { outline:0; }
+::-moz-selection, ::selection {
+  background:#cc0000;
+  color:#ffffff;
+  text-shadow:none;
+}
+p a, li a, blockquote a, .text-block a {
+  border-bottom:1px solid #000000;
+  border-bottom-color:rgba(0,0,0,0.3);
+}
+p a:hover, li a:hover, blockquote a:hover, .text-block a:hover { border-bottom-color:#cc0000; }
+.underlined {
+  border-bottom:1px solid #000000;
+  border-bottom-color:rgba(0,0,0,0.3);
+}
+.underlined:hover { border-bottom-color:#cc0000; }
+small { font-size:0.75em; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+  font-family:inherit;
+}
+h1 {
+  font-size:2.5em;
+  line-height:1.1em;
+}
+h2 {
+  font-size:1.8em;
+  margin:1.05em 0 .55em;
+  line-height:1.2em;
+}
+h3 {
+  font-size:1.25em;
+  margin:1.1em 0 0.5em;
+  line-height:1.2em;
+}
+h4, h5, h6 {
+  font-size:1em;
+  margin:1.5em 0 0.5em;
+}
+p { margin-bottom:1em; }
+p img {
+  display:block;
+  height:auto;
+  width:auto;
+  max-width:768px;
+  max-width: 620px;
+}
+ul, ol { margin:0 0 1em 2em; }
+li { margin:0 0 0.5em 0; }
+blockquote { margin:1em 0 1em 2em; }
+pre {
+  font-family:Courier, monospace;
+  font-size:0.75em;
+  line-height:1.2em;
+}
+ 
+/* 
+ * put your custom section here
+ */
+.header, .content, .sidebar, .footer{
+	background: #cccccc;
+	margin-bottom: 10px;
+}
+.header, .container, .footer{
+	width: 960px;
+	margin: 0 auto;
+}
+.header h1, .header p{
+	padding: 10px;
+}
+
+.container{
+	margin-bottom: 10px;
+}
+	.content{
+		width: 640px;
+		float: left;
+		margin-right: 20px;
+	}
+	.content .item{
+		padding: 10px;
+	}
+	.sidebar{
+		width: 300px;
+		float: left;
+	}
+	.sidebar .item{
+		padding: 10px;
+	}
+
+.footer p{
+	text-align: center;
+	padding: 10px;
+}
+
+/* handling responsive */
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+	.header, .container, .footer, .content, .sidebar{
+		width: 100%;
+	}
+}
