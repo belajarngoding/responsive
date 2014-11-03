@@ -1,4 +1,4 @@
-Blog menggunakan PHP dan MySQL
+Responsive Web
 =========
 
 Ini merupakan source code untuk tulisan pada
